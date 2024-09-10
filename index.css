@@ -1,0 +1,60 @@
+.bg-mynav {
+    background-color: #2c3e50;
+}
+
+body {
+    font-size: 1.25rem;
+    background: url('your-image-url.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* เลเยอร์สีดำโปร่งใส */
+    z-index: -1;
+}
+
+
+td {
+    line-height: 3rem;
+}
+
+
+
+.table thead th {
+    font-family: 'Arial', sans-serif; /* ใช้ฟอนต์ที่เรียบง่ายและชัดเจน */
+    font-size: 18px; /* ขนาดฟอนต์ */
+    font-weight: bold; /* เน้นความเข้มของฟอนต์ */
+    text-transform: uppercase; /* แปลงเป็นตัวพิมพ์ใหญ่ */
+    letter-spacing: 1px; /* เพิ่มช่องว่างระหว่างตัวอักษร */
+    padding: 8px 15px; /* เพิ่มระยะห่างในหัวตาราง */
+}
+
+/* ปรับขนาดและสไตล์ของเนื้อหาตาราง */
+.table tbody td {
+    font-family: 'Verdana', sans-serif; /* ฟอนต์ที่อ่านง่าย */
+    font-size: 10px; /* ขนาดตัวอักษรในตาราง */
+    font-weight: normal; /* ความหนาปกติของตัวอักษร */
+    padding: 8px 12px; /* ระยะห่างระหว่างช่องตาราง */
+    color: #ffffff; /* สีตัวอักษร */
+    line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
+}
+
+/* ปรับระยะห่างและเส้นขอบของตาราง */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 8px; /* เว้นระยะระหว่างแถว */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e8ad65; /* แถวที่ถูก hover จะเปลี่ยนเป็นสีส้ม */
+    color: #000; /* สีตัวอักษรเมื่อ hover */
+}
+
